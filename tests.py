@@ -16,8 +16,8 @@ def driver():
 @pytest.fixture
 def authorized_driver(driver):
     driver.get('http://petfriends.skillfactory.ru/login')
-    driver.find_element_by_id('email').send_keys('payuryevna@gmail.com')
-    driver.find_element_by_id('pass').send_keys('runya')
+    driver.find_element_by_id('email').send_keys('akadem21@rambler.ru')
+    driver.find_element_by_id('pass').send_keys('89278467550')
     driver.find_element_by_css_selector('button[type="submit"]').click()
 
     return driver
